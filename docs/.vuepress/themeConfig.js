@@ -45,14 +45,14 @@ module.exports = {
         children: [
           '',
           ['vue1', 'watch和computed的异同点'], //别名
-          '组件之间通讯方式'
+          ['vue2', '组件之间通讯方式']
         ]
       }
     ],
     '/React/': [
       {
         title: 'React基础知识',
-        children: ['']
+        children: ['', ['react1', '日常问题']]
       }
     ],
     '/angular/': [
