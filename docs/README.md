@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: 坑忆录 →
-actionLink: /home/
+actionLink: /vue/
 features:
 - title: 人生格言
   details: 业精于勤荒于嬉，行成于思毁于随

@@ -14,7 +14,8 @@ module.exports = {
     },
     { text: 'nodejs', link: '/nodejs/' },
     { text: 'mongodb', link: '/mongodb/' },
-    { text: 'nginx', link: '/nginx/' }
+    { text: 'nginx', link: '/nginx/' },
+    { text: '工具', link: '/tools/' }
   ],
   sidebar: {
     '/html/': [
@@ -81,6 +82,11 @@ module.exports = {
         title: 'nginx',
         collapsable: false,
         children: ['']
+      }
+    ],
+    '/tools/': [
+      {
+        title: '工具大全'
       }
     ]
   },
