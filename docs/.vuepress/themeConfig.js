@@ -14,7 +14,13 @@ module.exports = {
     },
     { text: 'nodejs', link: '/nodejs/' },
     { text: 'mongodb', link: '/mongodb/' },
-    { text: 'nginx', link: '/nginx/' }
+    {
+      text: '工具',
+      items: [
+        { text: 'nginx', link: '/deploy/nginx/' },
+        { text: 'jenkins', link: '/deploy/jenkins/' }
+      ]
+    }
   ],
   sidebar: {
     '/html/': [
@@ -76,9 +82,16 @@ module.exports = {
         children: ['']
       }
     ],
-    '/nginx/': [
+    '/deploy/nginx/': [
       {
         title: 'nginx',
+        collapsable: false,
+        children: ['']
+      }
+    ],
+    '/deploy/jenkins/': [
+      {
+        title: 'jenkins',
         collapsable: false,
         children: ['']
       }
