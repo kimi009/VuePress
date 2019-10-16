@@ -1,9 +1,14 @@
 module.exports = {
   nav: [
     { text: '主页', link: '/' },
-    { text: 'html', link: '/html/' },
-    { text: 'js', link: '/js/' },
-    { text: 'css', link: '/css/' },
+    {
+      text: '前端基础',
+      items: [
+        { text: 'HTML', link: '/html/' },
+        { text: 'JS', link: '/js/' },
+        { text: 'CSS', link: '/css/' }
+      ]
+    },
     {
       text: '前端框架',
       items: [
@@ -32,9 +37,9 @@ module.exports = {
     ],
     '/js/': [
       {
-        title: 'js',
+        title: 'JavaScript',
         collapsable: false,
-        children: ['']
+        children: ['', 'Cookie相关问题', 'Url编码']
       }
     ],
     '/css/': [
