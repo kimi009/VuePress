@@ -17,6 +17,7 @@ module.exports = {
     {
       text: '工具',
       items: [
+        { text: 'nginx', link: '/deploy/linux/' },
         { text: 'nginx', link: '/deploy/nginx/' },
         { text: 'jenkins', link: '/deploy/jenkins/' }
       ]
@@ -50,8 +51,7 @@ module.exports = {
         collapsable: false,
         children: [
           '',
-          ['vue1', 'watch和computed的异同点'], //别名
-          ['vue2', '组件之间通讯方式']
+          ['watch和computed的异同点','组件之间通讯方式','vue中jsx']
         ]
       }
     ],
@@ -78,6 +78,13 @@ module.exports = {
     '/mongodb/': [
       {
         title: 'mongodb',
+        collapsable: false,
+        children: ['']
+      }
+    ],
+    '/deploy/linux/': [
+      {
+        title: 'linux',
         collapsable: false,
         children: ['']
       }
