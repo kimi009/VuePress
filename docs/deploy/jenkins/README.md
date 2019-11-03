@@ -31,3 +31,35 @@ sudo apt-get remove jenkins
 sudo apt-get clean
 sudo apt-get autoclean
 ```
+
+
+> jenkins配置shell
+``` 
+==>执行node
+
+echo $PATH
+node -v 
+npm -v
+npm install 
+npm run build
+
+exit
+```
+```
+//执行docker部署 vue
+docker stop vuenginxapp || true \
+&& docker rm vuenginxapp || true \
+&& cd /root/test/workspace/vue-dp-test \
+&& docker build -t vuenginxapp .  \
+&& docker run -d -p 8083:80 --name vuenginxapp -v /root/test/workspace/vue-dp-test/dist:/usr/share/nginx/html/  -v /root/test/workspace/vue-dp-test/nginx.conf:/etc/nginx/nginx.conf vuenginxapp 
+
+```
+
+```
+//执行docker部署 vue
+docker stop vuemergefirst
+docker rm vuemergefirst
+cd /root/test/workspace/vuemerge/first
+docker build -t vuemergefirst .  
+docker run -d -p 8085:80 --name vuemergefirst -v /root/test/workspace/vuemerge/first/first:/usr/share/nginx/html/  -v /root/test/workspace/vuemerge/first/nginx.conf:/etc/nginx/nginx.conf vuemergefirst 
+```
