@@ -5,6 +5,13 @@
 [jenkins下载地址](https://jenkins.io/zh/)
 [jenkins文档](https://jenkins.io/zh/doc/)
 
+一、 docker 安装jenkins
+docker run -d -u 0 --privileged --name test -p 49003:8080 -v /root/test:/var/jenkins_home jenkins:latest
+
+docker run -d -u 0 --privileged --name test -p 49003:8080 -v /root/test:/var/jenkins_home jenkins/jenkins:lts
+
+二、 普通安装
+
 >用下面的命令构建安装环境
 ```
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -

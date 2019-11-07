@@ -56,13 +56,16 @@ module.exports = {
         collapsable: false,
         children: [
           '',
-          ['watch和computed的异同点','组件之间通讯方式','vue中jsx']
+          'watch和computed的异同点',
+          '组件之间通讯方式',
+          'vue中jsx'
         ]
       }
     ],
     '/React/': [
       {
         title: 'React基础知识',
+        collapsable: false,
         children: ['', ['react1', '日常问题']]
       }
     ],
